@@ -49,7 +49,7 @@ function onMessageHandler (target, context, msg, self) {
   // If the command is known, let's execute it
   if (commandName === '!banningrun') {
     client.say(target, 'Starting banning run in 5 seconds...');
-    console.log('* Executed ${commandName} command');
+    console.log(`* Executed ${commandName} command`);
     console.log('Ban run starting in 5 seconds...');
     console.log('You can stop this ban run at any time by Killing the nodejs process running this script');
     sleep(5000);
@@ -73,14 +73,14 @@ function onMessageHandler (target, context, msg, self) {
 });
 
   } else {
-    console.log('* Unknown command ${commandName}');
+    console.log(`* Unknown command ${commandName}`);
   }
 }
 
 
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
-  console.log('* Connected to ${addr}:${port}');
+  console.log(`* Connected to ${addr}:${port}`);
 }
 
 function sleep(milliseconds) {
