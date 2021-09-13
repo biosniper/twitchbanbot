@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "line-reader": "^0.4.0",
+    "tmi.js": "^1.8.5"
+  },
+  "name": "twitchbanbot",
+  "description": "Very early version of a banbot to simply run the ban commands in chat to ban bots provided in the original project https://github.com/therealnagia/twitchbanfromlist This bot grabs the text file, and iterates the ban commands in your own chat",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biosniper/twitchbanbot.git"
+  },
+  "author": "BioSniper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/biosniper/twitchbanbot/issues"
+  },
+  "homepage": "https://github.com/biosniper/twitchbanbot#readme"
+}
