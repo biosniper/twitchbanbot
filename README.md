@@ -28,3 +28,4 @@ Edit the variables in example.env to your requirements for user and oauth token
 Variables must remain inside of the quote marks  
 When happy with your config rename the file to .env (remove the word example from the file)  
 From your directory run: node bot.js  
+In your chat run: !banningrun

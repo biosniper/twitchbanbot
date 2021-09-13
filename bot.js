@@ -47,7 +47,7 @@ function onMessageHandler (target, context, msg, self) {
   
 
   // If the command is known, let's execute it
-  if (commandName === '!nose') {
+  if (commandName === '!banningrun') {
     client.say(target, 'Starting banning run in 5 seconds...');
     console.log('* Executed ${commandName} command');
     console.log('Ban run starting in 5 seconds...');
