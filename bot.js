@@ -55,8 +55,23 @@ function onMessageHandler (target, context, msg, self) {
     sleep(5000);
     console.log('Ban run begins...');
     client.say(target, 'Starting now... Check nodejs console for output!');
-    readbans();
-   
+
+    var lineReader = require('line-reader');
+    lineReader.eachLine('banlist.txt', function(line) {
+    
+    if (line.includes('BANLISTEND')) { 
+    client.say(target, 'We have finished the ban list processing now');
+    console.log('List processing finished, you can kill this application');
+    return false; 
+    }
+    
+    else{
+    client.say(target, '/ban ' + line);
+    console.log('Banned user ' + line);
+    sleep(500); // Twitch Documentation indicates max 100 messages per 30 seconds for mods or broadcasters. 0.5sec between bans keeps us withi>
+    }
+});
+
   } else {
     console.log('* Unknown command ${commandName}');
   }
@@ -66,16 +81,6 @@ function onMessageHandler (target, context, msg, self) {
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
   console.log('* Connected to ${addr}:${port}');
-}
-
-function readbans (lineReader, target, msg, self, context) {
-var lineReader = require('line-reader');
-    lineReader.eachLine('banlist.txt', function(line) {
-    client.say(target, '/ban ' + line);
-    console.log('Banned user ' + line);
-    sleep(500); // Twitch Documentation indicates max 100 messages per 30 seconds for mods or broadcasters. 0.5sec between bans keeps us within this time limit nicely. Go faster and your account may get banned!
-    if (line.includes('BANLISTEND')) { return false; }
-});
 }
 
 function sleep(milliseconds) {
