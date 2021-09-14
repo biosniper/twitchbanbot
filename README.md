@@ -29,3 +29,11 @@ Variables must remain inside of the quote marks
 When happy with your config rename the file to .env (remove the word example from the file)  
 From your directory run: node bot.js  
 In your chat run: !banningrun
+
+## Credits:
+**Ban lits used in this project;**
+https://docs.google.com/document/d/1_F3qKiwkECmHYJvHv4hevkOYWundzNewpC_PcSGBj1I/edit  
+twitter@MissRayvenn: https://docs.google.com/document/d/1F5tMM2oTDlJJ41320vJFd8MVDW_mGKnU_Q9RFWdY-fM/edit  
+twitter@MissRayvenn: https://pastebin.com/FyxGesEw  
+Twith Bot Sharing Discord  
+gh@therealnagia for the original project that inspired this one!
