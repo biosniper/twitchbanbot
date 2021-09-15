@@ -36,4 +36,5 @@ https://docs.google.com/document/d/1_F3qKiwkECmHYJvHv4hevkOYWundzNewpC_PcSGBj1I/
 twitter@MissRayvenn: https://docs.google.com/document/d/1F5tMM2oTDlJJ41320vJFd8MVDW_mGKnU_Q9RFWdY-fM/edit  
 twitter@MissRayvenn: https://pastebin.com/FyxGesEw  
 Twith Bot Sharing Discord and every member that has been working to fight this and publishing their lists  
-gh@therealnagia for the original project that inspired this one!
+
+**gh@therealnagia** Thank you for the original project that inspired this one!
